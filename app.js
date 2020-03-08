@@ -9,6 +9,8 @@ GAME RULES:
 
 */
 
+
+
 var scores, roundScore, activePlayer, gamePlaying;
 
 init();
@@ -33,6 +35,8 @@ document.querySelector('.btn-roll').addEventListener('click', function() {  //ad
         } else {
             //Next player
             nextPlayer();
+            // toastr warning popup
+            toastr["info"]("You rolled 1!");
         }
     }
 });   
